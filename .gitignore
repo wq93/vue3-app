@@ -6,4 +6,5 @@ logs
 tsconfig.tsbuildinfo
 .history
 .next
+.vscode
 dist
