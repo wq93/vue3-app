@@ -17,7 +17,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(), // 使用 HTML5 的 history 模式
+  // createWebHistory接受一个参数, 为所有路径添加一个前缀
+  history: createWebHistory('/prefix'),
   routes,
 });
 
