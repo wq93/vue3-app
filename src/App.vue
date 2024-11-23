@@ -1,7 +1,10 @@
 <script setup>
+import {useUserStore} from './stores/user.js'
+const counter = useUserStore()
 </script>
 
 <template>
+  {{ counter.count }}
   <nav>
     <router-link to="/" >Home</router-link>
     <router-link :to="{path: '/about'}">About</router-link>
