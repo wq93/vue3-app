@@ -4,6 +4,11 @@
 
 <template>
   About
+  <nav>
+    <router-link to="/about/child1" >Child1</router-link>
+    <router-link :to="{path: '/about/child2'}">Child2</router-link>
+  </nav>
+  <router-view></router-view>
 </template>
 
 <style scoped>
